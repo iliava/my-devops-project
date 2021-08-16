@@ -1,9 +1,9 @@
 properties([pipelineTriggers([pollSCM('* * * * *')])])
 node {
     stage("clone"){
-        git branch: 'main', url: 'https://github.com/avielb/my-0507-project.git'
+        git branch: 'main', url: 'https://github.com/iliava/my-devops-project.git'
     }
-    stage("show files"){a
+    stage("show files"){
         bat "dir"
     }
 }
